@@ -15,7 +15,13 @@ get_header();
       </p>
       <div class="ct-cta-row">
         <a class="ct-btn ct-btn-primary" href="#contact-form">Send project brief</a>
-        <a class="ct-btn ct-btn-ghost" href="tel:+15555551234">Call (555) 555-1234</a>
+        <?php
+        $phone_cta = get_theme_mod( 'claytara_contact_phone', '' );
+        $phone_raw = preg_replace( '/[^0-9+]/', '', $phone_cta );
+        if ( $phone_cta ) {
+          echo '<a class="ct-btn ct-btn-ghost" href="tel:' . esc_attr( $phone_raw ) . '">Call ' . esc_html( $phone_cta ) . '</a>';
+        }
+        ?>
       </div>
     </div>
   </section>
@@ -25,11 +31,21 @@ get_header();
       <div class="ct-grid-3">
         <div class="ct-card">
           <h3 class="ct-h3">Email</h3>
-          <p class="ct-muted"><a href="mailto:hello@leadgenfoundry.com">hello@leadgenfoundry.com</a></p>
+          <p class="ct-muted"><a href="mailto:<?php echo esc_attr( get_theme_mod( 'claytara_contact_email', 'hello@claytara.com' ) ); ?>"><?php echo esc_html( get_theme_mod( 'claytara_contact_email', 'hello@claytara.com' ) ); ?></a></p>
         </div>
         <div class="ct-card">
           <h3 class="ct-h3">Phone/Text</h3>
-          <p class="ct-muted"><a href="tel:+15555551234">(555) 555-1234</a></p>
+          <p class="ct-muted">
+            <?php
+            $phone     = get_theme_mod( 'claytara_contact_phone', '' );
+            $phone_raw = preg_replace( '/[^0-9+]/', '', $phone );
+            if ( $phone ) {
+              echo '<a href="tel:' . esc_attr( $phone_raw ) . '">' . esc_html( $phone ) . '</a>';
+            } else {
+              echo 'Available on request.';
+            }
+            ?>
+          </p>
         </div>
         <div class="ct-card">
           <h3 class="ct-h3">Hours</h3>
@@ -71,7 +87,7 @@ get_header();
       </div>
       <div class="ct-cta-actions">
         <a class="ct-btn ct-btn-primary" href="#contact-form">Send details</a>
-        <a class="ct-btn ct-btn-ghost" href="mailto:hello@leadgenfoundry.com">Email us</a>
+        <a class="ct-btn ct-btn-ghost" href="mailto:<?php echo esc_attr( get_theme_mod( 'claytara_contact_email', 'hello@claytara.com' ) ); ?>">Email us</a>
       </div>
     </div>
   </section>

@@ -210,3 +210,35 @@ function leadgen_log_event( array $entry ) {
 }
 
 require_once get_template_directory() . '/inc/leadgen-wizard.php';
+
+/**
+ * Customizer: contact info settings
+ */
+function claytara_customizer_settings( WP_Customize_Manager $wp_customize ) {
+  $wp_customize->add_section( 'claytara_contact', [
+    'title'    => 'Contact Info',
+    'priority' => 30,
+  ] );
+
+  $wp_customize->add_setting( 'claytara_contact_email', [
+    'default'           => 'hello@claytara.com',
+    'sanitize_callback' => 'sanitize_email',
+  ] );
+  $wp_customize->add_control( 'claytara_contact_email', [
+    'label'   => 'Contact Email',
+    'section' => 'claytara_contact',
+    'type'    => 'email',
+  ] );
+
+  $wp_customize->add_setting( 'claytara_contact_phone', [
+    'default'           => '',
+    'sanitize_callback' => 'sanitize_text_field',
+  ] );
+  $wp_customize->add_control( 'claytara_contact_phone', [
+    'label'       => 'Contact Phone',
+    'description' => 'Leave blank to hide the phone CTA.',
+    'section'     => 'claytara_contact',
+    'type'        => 'text',
+  ] );
+}
+add_action( 'customize_register', 'claytara_customizer_settings' );
