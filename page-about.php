@@ -21,7 +21,7 @@ get_header();
       </header>
 
       <div style="border-radius:14px;overflow:hidden;margin-bottom:40px;max-height:440px;">
-        <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80"
+        <img src="https://images.unsplash.com/photo-1573496799515-eebbb63814f2?auto=format&fit=crop&w=1200&q=80"
              alt="Diverse professional team in a strategy session"
              style="width:100%;height:440px;object-fit:cover;display:block;"
              loading="lazy">

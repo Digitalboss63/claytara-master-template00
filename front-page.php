@@ -42,7 +42,7 @@ get_header();
         </div>
 
         <div class="ct-hero-right" aria-hidden="true">
-          <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80"
+          <img src="https://images.unsplash.com/photo-1573496799515-eebbb63814f2?auto=format&fit=crop&w=900&q=80"
                alt=""
                width="900" height="600"
                loading="eager">
@@ -100,25 +100,25 @@ get_header();
       <div class="ct-services-grid">
         <article class="ct-service">
           <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=900&q=80"
-               alt="Diverse tech team reviewing workflow systems together" width="900" height="500" loading="lazy">
+               alt="Tech professionals collaborating on workflow automation systems" width="900" height="500" loading="lazy">
           <h3>Workflow Automation</h3>
           <p>End-to-end process automation that eliminates manual work and reduces operational friction.</p>
         </article>
         <article class="ct-service">
-          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=80"
-               alt="Black professional working with AI and data systems" width="900" height="500" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=900&q=80"
+               alt="Professional reviewing AI integration strategy" width="900" height="500" loading="lazy">
           <h3>AI Integration</h3>
           <p>Practical AI embedded into your existing systems — not experimental features, but production-ready tools.</p>
         </article>
         <article class="ct-service">
-          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=900&q=80"
-               alt="Diverse business team collaborating on custom software" width="900" height="500" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1560472355-536de3962603?auto=format&fit=crop&w=900&q=80"
+               alt="Business team reviewing custom SaaS product strategy" width="900" height="500" loading="lazy">
           <h3>Custom SaaS Products</h3>
           <p>Proprietary platforms and tools built specifically for your business model and customer workflows.</p>
         </article>
         <article class="ct-service">
           <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80"
-               alt="Executive team reviewing business intelligence dashboard" width="900" height="500" loading="lazy">
+               alt="Analytics dashboard showing business intelligence metrics" width="900" height="500" loading="lazy">
           <h3>Business Intelligence</h3>
           <p>Dashboards and reporting systems that give leadership real-time visibility into what matters.</p>
         </article>
