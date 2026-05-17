@@ -1,88 +1,70 @@
-/* Claytara UI JS
-   - Sticky nav (handled by CSS)
-   - Mobile menu toggle
-   - Smooth scroll for anchor links
-*/
+/* Claytara Master — UI JS v1.1 */
 (function () {
-  const burger = document.querySelector('.ct-burger');
-  const mobile = document.getElementById('ct-mobile-menu');
+  'use strict';
+
+  /* ── Mobile menu ── */
+  var burger = document.querySelector('.ct-burger');
+  var mobileMenu = document.getElementById('ct-mobile-menu');
 
   function setExpanded(val) {
-    burger.setAttribute('aria-expanded', val ? 'true' : 'false');
+    if (burger) burger.setAttribute('aria-expanded', val ? 'true' : 'false');
   }
 
   function openMenu() {
-    if (!mobile) return;
-    mobile.hidden = false;
+    if (!mobileMenu) return;
+    mobileMenu.hidden = false;
     document.body.classList.add('ct-menu-open');
     setExpanded(true);
   }
 
   function closeMenu() {
-    if (!mobile) return;
-    mobile.hidden = true;
+    if (!mobileMenu) return;
+    mobileMenu.hidden = true;
     document.body.classList.remove('ct-menu-open');
     setExpanded(false);
   }
 
-  if (burger && mobile) {
-    burger.addEventListener('click', () => {
-      const isOpen = !mobile.hidden;
-      if (isOpen) closeMenu();
-      else openMenu();
+  if (burger && mobileMenu) {
+    burger.addEventListener('click', function () {
+      var isOpen = !mobileMenu.hidden;
+      if (isOpen) closeMenu(); else openMenu();
     });
 
-    // Close when clicking a mobile link
-    mobile.addEventListener('click', (e) => {
-      const t = e.target;
-      if (t && t.matches('a')) closeMenu();
+    mobileMenu.addEventListener('click', function (e) {
+      if (e.target && e.target.matches('a')) closeMenu();
     });
 
-    // Close on ESC
-    document.addEventListener('keydown', (e) => {
+    document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape') closeMenu();
     });
   }
 
-  // Smooth scroll (respect reduced motion)
-  const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  /* ── Smooth scroll (respects prefers-reduced-motion) ── */
+  var prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   function smoothToHash(hash) {
-    const el = document.querySelector(hash);
+    var el = document.querySelector(hash);
     if (!el) return;
-
-    const header = document.querySelector('.ct-header');
-    const headerH = header ? header.offsetHeight : 0;
-
-    const y = el.getBoundingClientRect().top + window.pageYOffset - headerH - 12;
-
-    if (prefersReduced) {
-      window.scrollTo(0, y);
-      return;
-    }
-
+    var header = document.querySelector('.ct-header');
+    var headerH = header ? header.offsetHeight : 0;
+    var y = el.getBoundingClientRect().top + window.pageYOffset - headerH - 16;
+    if (prefersReduced) { window.scrollTo(0, y); return; }
     window.scrollTo({ top: y, behavior: 'smooth' });
   }
 
-  document.addEventListener('click', (e) => {
-    const a = e.target && e.target.closest ? e.target.closest('a[href^="#"]') : null;
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a[href^="#"]') : null;
     if (!a) return;
-
-    const hash = a.getAttribute('href');
+    var hash = a.getAttribute('href');
     if (!hash || hash === '#') return;
-
-    const target = document.querySelector(hash);
+    var target = document.querySelector(hash);
     if (!target) return;
-
     e.preventDefault();
     smoothToHash(hash);
-
-    // keep URL nice
     history.pushState(null, '', hash);
   });
 
-  // If page loads with hash, offset it
-  window.addEventListener('load', () => {
+  window.addEventListener('load', function () {
     if (location.hash) smoothToHash(location.hash);
   });
 })();

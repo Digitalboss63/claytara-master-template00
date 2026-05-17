@@ -1,146 +1,231 @@
-<?php get_header(); ?>
+<?php
+/**
+ * Homepage template — Claytara Digital
+ * Positioning: AI & Automation Infrastructure Built For Growing Businesses
+ */
+get_header();
+?>
 
-<main class="ct-page">
+<main class="ct-page" id="main" role="main">
 
-  <!-- Hero -->
-  <section class="ct-hero">
+  <!-- ═══ HERO ═══ -->
+  <section class="ct-hero" aria-labelledby="ct-hero-headline">
     <div class="ct-container">
       <div class="ct-hero-grid">
-        <div>
-          <div class="ct-kicker">Claytara Digital</div>
-          <h1 class="ct-h1">Get a website that actually brings you customers</h1>
-          <p class="ct-hero-copy">We design and build high-converting websites and funnels that turn visitors into real leads and paying clients.</p>
 
-          <div class="ct-pills" style="margin-bottom:24px;">
-            <span class="ct-pill">Built for real businesses</span>
-            <span class="ct-pill">Focused on measurable results</span>
-            <span class="ct-pill">No fluff &mdash; just performance</span>
+        <div class="ct-hero-content">
+          <div class="ct-kicker">Claytara Digital</div>
+          <h1 class="ct-h1" id="ct-hero-headline">
+            AI &amp; Automation Infrastructure Built For Growing Businesses
+          </h1>
+          <p class="ct-hero-copy">
+            Claytara Digital designs scalable operational systems that help businesses streamline workflows,
+            improve efficiency, and build a stronger foundation for long-term growth.
+          </p>
+
+          <div class="ct-pills" style="margin-bottom:28px;" aria-label="Core capabilities">
+            <span class="ct-pill">Operational Systems</span>
+            <span class="ct-pill">Workflow Automation</span>
+            <span class="ct-pill">AI Integration</span>
+            <span class="ct-pill">Custom SaaS</span>
+            <span class="ct-pill">Business Intelligence</span>
           </div>
 
           <div class="ct-cta-row">
-            <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="ct-btn ct-btn-primary">Get a Quote</a>
-            <a href="#services" class="ct-btn ct-btn-ghost">View Services</a>
+            <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="ct-btn ct-btn-primary">
+              Book a Strategy Call
+            </a>
+            <a href="#solutions" class="ct-btn ct-btn-ghost">
+              Explore Solutions
+            </a>
           </div>
         </div>
 
-        <div class="ct-hero-right">
+        <div class="ct-hero-right" aria-hidden="true">
           <img src="https://images.unsplash.com/photo-1573497491765-cf4147cb7b99?auto=format&fit=crop&w=900&q=80"
-               alt="Professional website design meeting"
-               style="max-height:420px; object-fit:cover;">
+               alt=""
+               width="900" height="600"
+               loading="eager">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ OPERATIONAL CHALLENGES WE SOLVE ═══ -->
+  <section id="solutions" class="ct-section ct-section-alt" aria-labelledby="ct-challenges-heading">
+    <div class="ct-container">
+      <div class="ct-section-head">
+        <div>
+          <div class="ct-kicker">Operational Challenges We Solve</div>
+          <h2 class="ct-h2" id="ct-challenges-heading">Where Growing Businesses Get Stuck</h2>
+        </div>
+        <p class="ct-muted">
+          Most businesses outgrow their tools before they outgrow their market.
+          We build the infrastructure that keeps up with your momentum.
+        </p>
+      </div>
+
+      <div class="ct-grid-3">
+        <div class="ct-card">
+          <h3 class="ct-h3">Disconnected Workflows</h3>
+          <p class="ct-muted">Teams operating in silos, manual handoffs, and data scattered across tools that don't talk to each other.</p>
+        </div>
+        <div class="ct-card">
+          <h3 class="ct-h3">No Operational Visibility</h3>
+          <p class="ct-muted">Leadership making decisions without real-time data, clear reporting, or a unified view of business performance.</p>
+        </div>
+        <div class="ct-card">
+          <h3 class="ct-h3">Scaling Without Systems</h3>
+          <p class="ct-muted">Revenue growing but operations stretched thin — no automation backbone to absorb the growth without adding headcount.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Services -->
-  <section id="services" class="ct-section">
+  <!-- ═══ WHAT WE BUILD ═══ -->
+  <section class="ct-section" aria-labelledby="ct-builds-heading">
     <div class="ct-container">
-      <div class="ct-kicker" style="color:var(--ct-blue);">What We Do</div>
-      <h2 class="ct-section-title">Services</h2>
+      <div class="ct-section-head">
+        <div>
+          <div class="ct-kicker">What We Build</div>
+          <h2 class="ct-h2" id="ct-builds-heading">Operational Infrastructure That Works</h2>
+        </div>
+        <p class="ct-muted">
+          Not templates. Not generic software. Purpose-built systems designed around your workflows,
+          your team, and your growth objectives.
+        </p>
+      </div>
 
       <div class="ct-services-grid">
         <article class="ct-service">
-          <img src="https://images.unsplash.com/photo-1516321165247-4aa89a48be28?auto=format&fit=crop&w=900&q=80"
-               alt="Professionals reviewing website design on a laptop">
-          <h3>Website Development</h3>
-          <p>Custom-built websites designed to turn visitors into paying customers.</p>
+          <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=900&q=80"
+               alt="Workflow automation system diagram" width="900" height="500" loading="lazy">
+          <h3>Workflow Automation</h3>
+          <p>End-to-end process automation that eliminates manual work and reduces operational friction.</p>
         </article>
-
         <article class="ct-service">
-          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80"
-               alt="Team mapping out funnel strategy">
-          <h3>Funnel Design</h3>
-          <p>Strategic funnels that guide users step by step toward action.</p>
+          <img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&w=900&q=80"
+               alt="AI integration platform" width="900" height="500" loading="lazy">
+          <h3>AI Integration</h3>
+          <p>Practical AI embedded into your existing systems — not experimental features, but production-ready tools.</p>
         </article>
-
         <article class="ct-service">
-          <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=900&q=80"
-               alt="Business professionals discussing lead generation strategy">
-          <h3>Lead Generation</h3>
-          <p>Systems that consistently attract and capture qualified leads.</p>
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80"
+               alt="Custom SaaS dashboard" width="900" height="500" loading="lazy">
+          <h3>Custom SaaS Products</h3>
+          <p>Proprietary platforms and tools built specifically for your business model and customer workflows.</p>
         </article>
-
         <article class="ct-service">
-          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80"
-               alt="Digital team collaborating on workflow automation">
-          <h3>Automation</h3>
-          <p>Automations that streamline your workflow and help your business scale.</p>
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80"
+               alt="Business intelligence dashboard" width="900" height="500" loading="lazy">
+          <h3>Business Intelligence</h3>
+          <p>Dashboards and reporting systems that give leadership real-time visibility into what matters.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- Why section -->
-  <section class="ct-section ct-section-alt">
+  <!-- ═══ HOW WE WORK ═══ -->
+  <section class="ct-section ct-section-alt" aria-labelledby="ct-process-heading">
     <div class="ct-container">
       <div class="ct-section-head">
         <div>
-          <div class="ct-kicker">The Difference</div>
-          <h2 class="ct-h2">Most websites don&rsquo;t bring in business. Yours should.</h2>
+          <div class="ct-kicker">How We Work</div>
+          <h2 class="ct-h2" id="ct-process-heading">A Structured Engagement Model</h2>
         </div>
-        <p class="ct-muted">We build with one goal: more leads. Every section is intentional, every CTA is tested, and every page is built to perform.</p>
+        <p class="ct-muted">
+          No ambiguity. No scope creep. A clear process from discovery to delivery.
+        </p>
       </div>
 
       <div class="ct-grid-3">
         <div class="ct-card">
-          <h3 class="ct-h3">Clear messaging</h3>
-          <p class="ct-muted">Visitors know who you are, what you offer, and what to do next within 5 seconds.</p>
+          <div class="ct-step-num" aria-hidden="true">01</div>
+          <h3 class="ct-h3">Discovery &amp; Scoping</h3>
+          <p class="ct-muted">We map your current workflows, identify constraints, and define the operational outcome you need to achieve.</p>
         </div>
         <div class="ct-card">
-          <h3 class="ct-h3">Mobile-first builds</h3>
-          <p class="ct-muted">Most of your leads are on a phone. We design for that reality, not as an afterthought.</p>
+          <div class="ct-step-num" aria-hidden="true">02</div>
+          <h3 class="ct-h3">Architecture &amp; Build</h3>
+          <p class="ct-muted">We design the system architecture, build in sprints, and keep you informed with milestone reviews throughout.</p>
         </div>
         <div class="ct-card">
-          <h3 class="ct-h3">Performance & speed</h3>
-          <p class="ct-muted">Slow sites lose leads. We build lean and fast, with clean code that Google respects.</p>
+          <div class="ct-step-num" aria-hidden="true">03</div>
+          <h3 class="ct-h3">Deploy &amp; Stabilize</h3>
+          <p class="ct-muted">We go live, monitor for stability, and provide a structured handoff with documentation and training.</p>
         </div>
+      </div>
+
+      <div style="margin-top:32px;text-align:center;">
+        <a href="<?php echo esc_url( home_url( '/process/' ) ); ?>" class="ct-btn ct-btn-ghost-dark">
+          See the Full Process
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- Social proof / process teaser -->
-  <section class="ct-section">
+  <!-- ═══ BUILT FOR BUSINESSES PREPARING TO SCALE ═══ -->
+  <section class="ct-section" aria-labelledby="ct-scale-heading">
     <div class="ct-container">
-      <div class="ct-section-head">
-        <div>
-          <div class="ct-kicker">How It Works</div>
-          <h2 class="ct-h2">Launch-ready in 7&ndash;14 days</h2>
+      <div class="ct-card ct-scale-card">
+        <div class="ct-scale-grid">
+          <div>
+            <div class="ct-kicker" style="color:var(--ct-blue);">Built For Businesses Preparing To Scale</div>
+            <h2 class="ct-h2" id="ct-scale-heading">
+              Infrastructure That Grows With You
+            </h2>
+            <p class="ct-muted" style="margin-top:12px;">
+              We work with businesses at the inflection point — where the next phase of growth requires
+              more than effort. It requires systems. We build the operational foundation that makes
+              scaling sustainable, efficient, and defensible.
+            </p>
+            <ul class="ct-check-list" style="margin-top:20px;">
+              <li>Systems designed for 3x growth, not just today's volume</li>
+              <li>Built with clean architecture — maintainable, auditable, extendable</li>
+              <li>Documented handoffs so your team owns what we build</li>
+              <li>No vendor lock-in — your infrastructure, your control</li>
+            </ul>
+          </div>
+          <div class="ct-scale-stats" aria-label="Key metrics">
+            <div class="ct-stat">
+              <span class="ct-stat-num">72hrs</span>
+              <span class="ct-stat-label">Avg time to first working prototype</span>
+            </div>
+            <div class="ct-stat">
+              <span class="ct-stat-num">100%</span>
+              <span class="ct-stat-label">Custom builds — no templates, no filler</span>
+            </div>
+            <div class="ct-stat">
+              <span class="ct-stat-num">7–14d</span>
+              <span class="ct-stat-label">Typical sprint to launch-ready delivery</span>
+            </div>
+          </div>
         </div>
-        <p class="ct-muted">A simple three-step process that keeps things moving without back-and-forth delays.</p>
-      </div>
-
-      <div class="ct-grid-3">
-        <div class="ct-card">
-          <h3 class="ct-h3">1. Strategy</h3>
-          <p class="ct-muted">We clarify your offer, target customer, and the one action your site needs to drive.</p>
-        </div>
-        <div class="ct-card">
-          <h3 class="ct-h3">2. Build</h3>
-          <p class="ct-muted">We write the copy, design the layout, and wire up automations. You get a Loom walkthrough to review.</p>
-        </div>
-        <div class="ct-card">
-          <h3 class="ct-h3">3. Launch</h3>
-          <p class="ct-muted">QA, speed checks, DNS setup, and 14-day post-launch support. Done.</p>
-        </div>
-      </div>
-
-      <div style="margin-top:32px; text-align:center;">
-        <a href="<?php echo esc_url( home_url( '/process/' ) ); ?>" class="ct-btn ct-btn-ghost-dark">See the full process</a>
       </div>
     </div>
   </section>
 
-  <!-- CTA Strip -->
-  <section class="ct-cta">
+  <!-- ═══ FINAL CTA ═══ -->
+  <section class="ct-cta" aria-labelledby="ct-final-cta-heading">
     <div class="ct-container ct-cta-inner">
       <div>
-        <div class="ct-kicker">Ready?</div>
-        <h2 class="ct-h2">Let&rsquo;s build something that works.</h2>
-        <p class="ct-muted">Send your URL and goal &mdash; we&rsquo;ll reply with a simple plan and timeline.</p>
+        <div class="ct-kicker">Ready to Build?</div>
+        <h2 class="ct-h2" id="ct-final-cta-heading">
+          Let&rsquo;s Talk About Your Operational Foundation
+        </h2>
+        <p class="ct-muted">
+          Tell us where your business is today and where it needs to go.
+          We&rsquo;ll map a clear path to get there.
+        </p>
       </div>
       <div class="ct-cta-actions">
-        <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="ct-btn ct-btn-primary">Get a Quote</a>
-        <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>" class="ct-btn ct-btn-ghost">View Services</a>
+        <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="ct-btn ct-btn-primary">
+          Book a Strategy Call
+        </a>
+        <a href="<?php echo esc_url( home_url( '/services/' ) ); ?>" class="ct-btn ct-btn-ghost">
+          Explore Services
+        </a>
       </div>
     </div>
   </section>
