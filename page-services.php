@@ -6,7 +6,7 @@ get_header();
 ?>
 
 <main class="ct-page leadgen-services">
-  <section class="ct-hero" style="background:#173a6a;color:#fff;padding:80px 0;">
+  <section class="ct-hero" style="background:linear-gradient(135deg, #0f2648 0%, #173a6a 100%);color:#fff;padding:80px 0;">
     <div class="ct-container">
       <div class="ct-kicker">SERVICES</div>
       <h1 class="ct-h2" style="font-size:44px;max-width:760px;">Done-for-you landing pages, funnels, and automations built for local service leads.</h1>
