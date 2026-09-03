@@ -40,7 +40,7 @@ function claytara_remove_email_page_personal_photo( $content ) {
 
         // Remove the first WordPress image block/figure on this legacy page.
         $updated = preg_replace(
-                '#<figure\b[^>]*class=("|\')[^"\']*wp-block-image[^"\']*\1[^>]*>.*?</figure>#is',
+                '#<figure\b[^>]*wp-block-image[^>]*>.*?</figure>#is',
                 '',
                 $content,
                 1
