@@ -1,0 +1,83 @@
+/* Claytara media sizing and responsive behavior — v1.3.1 */
+
+/* Never let content media overflow its container. */
+.ct-prose img,
+.ct-editor-card img,
+.wp-block-image img,
+.wp-block-media-text img {
+  max-width: 100%;
+  height: auto;
+}
+
+.ct-prose iframe,
+.ct-editor-card iframe,
+.ct-prose video,
+.ct-editor-card video,
+.wp-block-embed iframe,
+.wp-block-video video {
+  max-width: 100%;
+}
+
+/* Visual frames should size from the media, not force every image to fill a tall box. */
+.ct-visual-frame picture {
+  display: block;
+  width: 100%;
+}
+
+.ct-visual-frame img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.ct-visual-frame-lg {
+  min-height: 0;
+}
+
+/* Product/interface artwork keeps a wide presentation without stretching. */
+.ct-visual-frame-interface img {
+  aspect-ratio: 11 / 6;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* People/team photography keeps a natural editorial crop. */
+.ct-visual-frame-photo img {
+  aspect-ratio: 10 / 7;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Compatibility with the older homepage visual-frame classes still present in app.css. */
+.ct-home-visual-frame img,
+.ct-home-visual-frame-hero img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: 0;
+}
+
+.ct-home-visual-frame-hero img {
+  aspect-ratio: 11 / 6;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 900px) {
+  .ct-visual-frame-lg,
+  .ct-home-visual-frame-hero img {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .ct-visual-frame-interface img,
+  .ct-home-visual-frame-hero img {
+    aspect-ratio: 16 / 10;
+  }
+
+  .ct-visual-frame-photo img {
+    aspect-ratio: 4 / 3;
+  }
+}
