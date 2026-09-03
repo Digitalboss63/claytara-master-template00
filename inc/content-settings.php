@@ -23,6 +23,39 @@ function claytara_register_case_study_cpt() {
 add_action( 'init', 'claytara_register_case_study_cpt' );
 
 /* ═══════════════════════════════════════════════
+   LEGACY EMAIL PAGE — REMOVE PERSONAL PHOTO
+═══════════════════════════════════════════════ */
+function claytara_remove_email_page_personal_photo( $content ) {
+        if ( is_admin() || ! is_singular( 'page' ) || ! in_the_loop() || ! is_main_query() ) {
+                return $content;
+        }
+
+        $post_id = get_queried_object_id();
+        $title   = (string) get_the_title( $post_id );
+        $slug    = (string) get_post_field( 'post_name', $post_id );
+
+        if ( false === stripos( $title, 'Increase Sales With Email' ) && 'increase-sales-with-email' !== $slug ) {
+                return $content;
+        }
+
+        // Remove the first WordPress image block/figure on this legacy page.
+        $updated = preg_replace(
+                '#<figure\b[^>]*wp-block-image[^>]*>.*?</figure>#is',
+                '',
+                $content,
+                1
+        );
+
+        if ( $updated !== $content ) {
+                return $updated;
+        }
+
+        // Fallback for a standalone image element inserted outside a block wrapper.
+        return preg_replace( '#<img\b[^>]*>#is', '', $content, 1 );
+}
+add_filter( 'the_content', 'claytara_remove_email_page_personal_photo', 99 );
+
+/* ═══════════════════════════════════════════════
    CUSTOMIZER SETTINGS
 ═══════════════════════════════════════════════ */
 function claytara_customizer_settings( WP_Customize_Manager $wp_customize ) {
