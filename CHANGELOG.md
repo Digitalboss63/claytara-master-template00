@@ -4,6 +4,13 @@ All significant Claytara Digital website/theme changes should be recorded here.
 
 ## Unreleased
 
+### Product Studio Growth / Find Home First
+- Added a homepage Product Studio Progress section that presents Find Home First as Claytara Digital's flagship B2B SaaS product.
+- Added the Housing Acquisition & Placement Operations positioning and the "Housing Placement Gap" problem statement.
+- Added current commercialization milestones: paid SaaS tiers, 14-day trial, partner-channel development, Atlanta-first market validation, lean support planning, and selective angel-growth preparation.
+- Expanded the About page to show Claytara's progression from client systems and automation work into owned SaaS products, recurring revenue, strategic distribution, and growth capital readiness.
+- Added Find Home First as a featured product on the Work / Case Studies archive with a direct link to the product site.
+
 ### Infrastructure / Agent Access
 - Established `Digitalboss63/claytara-master-template00` as the authoritative Claytara website theme repository.
 - Added `AGENTS.md` with WordPress/PHP, media, accessibility, debugging, QA, security, and release rules.
