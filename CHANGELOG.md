@@ -4,6 +4,15 @@ All significant Claytara Digital website/theme changes should be recorded here.
 
 ## Unreleased
 
+### Services Alignment / Visual Cleanup — v1.3.5
+- Removed irrelevant stock photography from the homepage "What We Build" cards so Workflow Automation, AI Integration, Custom SaaS Products, and Business Intelligence are presented as clean text-first capabilities.
+- Rebuilt the Services page around Claytara's current delivery model: Strategy Diagnostic, Automation Sprint, SaaS / Platform Build, and Strategic Systems Partner.
+- Added scope language making clear that $15,000 is a starting point for a defined MVP or focused platform build, not a fixed price for unlimited software scope.
+- Replaced "Acquisition-ready documentation" with "Technical architecture & operational documentation."
+- Replaced the vague "Ongoing AI/system intelligence layer" promise with "Ongoing AI, automation & system optimization."
+- Removed the older local-service landing-page/funnel positioning from the Services template.
+- Bumped the theme version to `1.3.5`.
+
 ### Product Studio Growth / Find Home First
 - Added a homepage Product Studio Progress section that presents Find Home First as Claytara Digital's flagship B2B SaaS product.
 - Added the Housing Acquisition & Placement Operations positioning and the "Housing Placement Gap" problem statement.
@@ -35,6 +44,6 @@ All significant Claytara Digital website/theme changes should be recorded here.
 - Modularized the oversized theme bootstrap into theme-core, lead-generation core, content settings, and site-integration modules for safer agent maintenance.
 
 ### Repair scope queued
-- Finish replacing heavyweight homepage image sources with optimized responsive assets and correct intrinsic dimensions.
+- Finish replacing heavyweight homepage image sources with optimized responsive assets and correct intrinsic dimensions where imagery remains relevant.
 - Verify mobile/tablet/desktop presentation.
 - Verify navigation, forms, appearance settings, Site Integrations/ADA behavior, and PHP/browser-console health.
