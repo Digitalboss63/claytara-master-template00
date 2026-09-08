@@ -99,26 +99,18 @@ get_header();
 
       <div class="ct-services-grid">
         <article class="ct-service">
-          <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=900&q=80"
-               alt="Tech professionals collaborating on workflow automation systems" width="900" height="500" loading="lazy">
           <h3>Workflow Automation</h3>
           <p>End-to-end process automation that eliminates manual work and reduces operational friction.</p>
         </article>
         <article class="ct-service">
-          <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=900&q=80"
-               alt="Professional reviewing AI integration strategy" width="900" height="500" loading="lazy">
           <h3>AI Integration</h3>
           <p>Practical AI embedded into your existing systems — not experimental features, but production-ready tools.</p>
         </article>
         <article class="ct-service">
-          <img src="https://images.unsplash.com/photo-1560472355-536de3962603?auto=format&fit=crop&w=900&q=80"
-               alt="Business team reviewing custom SaaS product strategy" width="900" height="500" loading="lazy">
           <h3>Custom SaaS Products</h3>
           <p>Proprietary platforms and tools built specifically for your business model and customer workflows.</p>
         </article>
         <article class="ct-service">
-          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80"
-               alt="Analytics dashboard showing business intelligence metrics" width="900" height="500" loading="lazy">
           <h3>Business Intelligence</h3>
           <p>Dashboards and reporting systems that give leadership real-time visibility into what matters.</p>
         </article>
