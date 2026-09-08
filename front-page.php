@@ -126,8 +126,66 @@ get_header();
     </div>
   </section>
 
+  <!-- ═══ PRODUCT STUDIO PROGRESS ═══ -->
+  <section class="ct-section ct-section-alt" aria-labelledby="ct-product-progress-heading">
+    <div class="ct-container">
+      <div class="ct-section-head">
+        <div>
+          <div class="ct-kicker">Product Studio Progress</div>
+          <h2 class="ct-h2" id="ct-product-progress-heading">From Building Systems to Building Owned Platforms</h2>
+        </div>
+        <p class="ct-muted">
+          Claytara Digital is applying the same workflow, automation, and data discipline used in client systems
+          to a growing portfolio of owned software products.
+        </p>
+      </div>
+
+      <div class="ct-card">
+        <div class="ct-scale-grid">
+          <div>
+            <div class="ct-kicker" style="color:var(--ct-blue);">Flagship Product</div>
+            <h3 class="ct-h2" style="font-size:28px;">Find Home First</h3>
+            <p class="ct-muted" style="margin-top:12px;">
+              Find Home First is a B2B Housing Acquisition &amp; Placement Operations platform built to close the
+              Housing Placement Gap — the fragmented work between identifying housing need and actually finding,
+              securing, coordinating, and completing a placement.
+            </p>
+            <div class="ct-pills" style="margin-top:20px;" aria-label="Find Home First capabilities">
+              <span class="ct-pill">Market Intelligence</span>
+              <span class="ct-pill">Property Discovery</span>
+              <span class="ct-pill">Landlord Outreach</span>
+              <span class="ct-pill">Referral Workflow</span>
+              <span class="ct-pill">Resident Placement</span>
+            </div>
+            <div class="ct-cta-row" style="margin-top:24px;">
+              <a href="https://www.findhomefirst.com" class="ct-btn ct-btn-primary" target="_blank" rel="noopener noreferrer">
+                Explore Find Home First
+              </a>
+              <a href="<?php echo esc_url( home_url( '/work/' ) ); ?>" class="ct-btn ct-btn-ghost-dark">
+                View Our Work
+              </a>
+            </div>
+          </div>
+          <div>
+            <h3 class="ct-h3">Current growth stage</h3>
+            <ul class="ct-check-list" style="margin-top:16px;">
+              <li>Commercial SaaS pricing and a 14-day trial</li>
+              <li>Course-creator and strategic partner channel development</li>
+              <li>Atlanta-first customer acquisition and market validation</li>
+              <li>Lean support planning for scalable customer operations</li>
+              <li>Preparing for selective angel-backed growth capital</li>
+            </ul>
+            <div class="ct-note" style="margin-top:20px;">
+              <strong>Product principle:</strong> Find. Secure. Place. One project, one status, one clear next action.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ═══ HOW WE WORK ═══ -->
-  <section class="ct-section ct-section-alt" aria-labelledby="ct-process-heading">
+  <section class="ct-section" aria-labelledby="ct-process-heading">
     <div class="ct-container">
       <div class="ct-section-head">
         <div>
