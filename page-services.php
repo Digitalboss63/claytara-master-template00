@@ -5,120 +5,185 @@
 get_header();
 ?>
 
-<main class="ct-page leadgen-services">
-  <section class="ct-hero" style="background:linear-gradient(135deg, #0f2648 0%, #173a6a 100%);color:#fff;padding:80px 0;">
+<main class="ct-page" id="main" role="main">
+  <section class="ct-hero" aria-labelledby="ct-services-heading">
     <div class="ct-container">
       <div class="ct-kicker">SERVICES</div>
-      <h1 class="ct-h2" style="font-size:44px;max-width:760px;">Done-for-you landing pages, funnels, and automations built for local service leads.</h1>
-      <p class="ct-muted" style="color:rgba(255,255,255,.85);max-width:620px;">
-        We plan, write, and ship the assets that keep your phones ringing—without adding more software noise to your week.
+      <h1 class="ct-h1" id="ct-services-heading" style="max-width:860px;">
+        Strategy, Automation, and Software Systems Built Around the Work You Actually Do
+      </h1>
+      <p class="ct-hero-copy" style="max-width:760px;">
+        Claytara Digital helps growing businesses identify operational drag, automate repetitive work,
+        and build focused software systems that improve execution without adding unnecessary complexity.
       </p>
       <div class="ct-cta-row">
-        <a class="ct-btn ct-btn-primary" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">Book a build call</a>
-        <a class="ct-btn ct-btn-ghost" href="<?php echo esc_url( home_url( '/work/' ) ); ?>">See recent work</a>
+        <a class="ct-btn ct-btn-primary" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">Book a Strategy Call</a>
+        <a class="ct-btn ct-btn-ghost" href="<?php echo esc_url( home_url( '/work/' ) ); ?>">View Our Work</a>
       </div>
     </div>
   </section>
 
-  <section class="ct-section">
+  <section class="ct-section" aria-labelledby="ct-engagements-heading">
     <div class="ct-container">
-      <h2 class="ct-section-title" style="font-size:40px;">Core offers</h2>
-      <div class="ct-grid">
+      <div class="ct-section-head">
+        <div>
+          <div class="ct-kicker">ENGAGEMENT OPTIONS</div>
+          <h2 class="ct-h2" id="ct-engagements-heading">Start With the Level of Help You Need</h2>
+        </div>
+        <p class="ct-muted">
+          Each engagement has a defined objective and scope. Larger integrations, compliance requirements,
+          mobile applications, migrations, or enterprise security needs are scoped separately.
+        </p>
+      </div>
+
+      <div class="ct-services-grid">
         <article class="ct-card">
-          <h3 class="ct-h3">LeadGen Landing Sprint</h3>
-          <p class="ct-muted">One hero landing page tuned for plumbing, roofing, HVAC, or other local services—copy, layout, compliance, and follow-ups included.</p>
-          <ul class="ct-list">
-            <li>Research + positioning session</li>
-            <li>Custom hero + proof blocks</li>
-            <li>Tap-to-call + SMS prompts</li>
-            <li>Launch-ready within 5–7 days</li>
+          <div class="ct-kicker">STARTING AT</div>
+          <h2 class="ct-h2" style="font-size:34px;">$1,500</h2>
+          <h3 class="ct-h3">Strategy Diagnostic</h3>
+          <p class="ct-muted">Best for teams that need clarity before committing to a system build.</p>
+          <ul class="ct-check-list" style="margin-top:18px;">
+            <li>Workflow audit</li>
+            <li>Operational drag assessment</li>
+            <li>System opportunity map</li>
+            <li>Decision-flow review</li>
+            <li>Software roadmap</li>
           </ul>
         </article>
+
         <article class="ct-card">
-          <h3 class="ct-h3">Website Conversion Rebuild</h3>
-          <p class="ct-muted">Full multi-page sites (Home, Services, About, FAQ, Contact) rebuilt with Grandma Easy UX so visitors know exactly what to do.</p>
-          <ul class="ct-list">
-            <li>Architecture + copy rewrites</li>
-            <li>Performance-focused build</li>
-            <li>On-page SEO foundations</li>
-            <li>Content handoff docs</li>
+          <div class="ct-kicker">STARTING AT</div>
+          <h2 class="ct-h2" style="font-size:34px;">$5,000</h2>
+          <h3 class="ct-h3">Automation Sprint</h3>
+          <p class="ct-muted">Best for targeted automation wins that remove manual operational drag fast.</p>
+          <ul class="ct-check-list" style="margin-top:18px;">
+            <li>AI workflow automation</li>
+            <li>Internal tools</li>
+            <li>Lightweight dashboards</li>
+            <li>Process simplification</li>
+            <li>System integrations where APIs and access permit</li>
           </ul>
         </article>
+
         <article class="ct-card">
-          <h3 class="ct-h3">Automation + Nurture</h3>
-          <p class="ct-muted">Lead routing, follow-up texts, and simple CRM automations that stop hot prospects from going cold overnight.</p>
-          <ul class="ct-list">
-            <li>CRM/Zapier mapping</li>
-            <li>Instant SMS + email replies</li>
-            <li>Pipeline dashboards</li>
-            <li>Quarterly tuning (optional)</li>
+          <div class="ct-kicker">STARTING AT</div>
+          <h2 class="ct-h2" style="font-size:34px;">$15,000</h2>
+          <h3 class="ct-h3">SaaS / Platform Build</h3>
+          <p class="ct-muted">Best for operators building the software layer behind growth, delivery, or decision-making.</p>
+          <ul class="ct-check-list" style="margin-top:18px;">
+            <li>Custom SaaS platforms</li>
+            <li>Guided action systems</li>
+            <li>Client portals</li>
+            <li>Dashboards</li>
+            <li>AI-assisted business systems</li>
+            <li>Defined MVP to launch-ready platform builds</li>
+          </ul>
+        </article>
+
+        <article class="ct-card">
+          <div class="ct-kicker">INVESTMENT</div>
+          <h2 class="ct-h2" style="font-size:34px;">Custom</h2>
+          <h3 class="ct-h3">Strategic Systems Partner</h3>
+          <p class="ct-muted">Best for companies with multiple systems, modernization goals, or retained product support needs.</p>
+          <ul class="ct-check-list" style="margin-top:18px;">
+            <li>Long-term product development</li>
+            <li>Platform modernization</li>
+            <li>Multi-system integration</li>
+            <li>Technical architecture &amp; operational documentation</li>
+            <li>Ongoing AI, automation &amp; system optimization</li>
+            <li>Retained technical growth support</li>
           </ul>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="ct-section ct-section-alt">
+  <section class="ct-section ct-section-alt" aria-labelledby="ct-capabilities-heading">
+    <div class="ct-container">
+      <div class="ct-section-head">
+        <div>
+          <div class="ct-kicker">CORE CAPABILITIES</div>
+          <h2 class="ct-h2" id="ct-capabilities-heading">What Claytara Can Deliver Today</h2>
+        </div>
+        <p class="ct-muted">
+          We focus on practical systems that can be understood, maintained, and grown over time.
+          The goal is useful operational leverage, not technology for its own sake.
+        </p>
+      </div>
+
+      <div class="ct-grid-3">
+        <div class="ct-card">
+          <h3 class="ct-h3">Workflow &amp; Automation Systems</h3>
+          <p class="ct-muted">Automated handoffs, follow-up logic, operational workflows, internal tools, and connected processes that reduce repetitive work.</p>
+        </div>
+        <div class="ct-card">
+          <h3 class="ct-h3">Custom SaaS &amp; Guided Platforms</h3>
+          <p class="ct-muted">Focused web applications with authentication, databases, admin controls, workflow logic, dashboards, and deployment.</p>
+        </div>
+        <div class="ct-card">
+          <h3 class="ct-h3">AI-Assisted Business Systems</h3>
+          <p class="ct-muted">Practical AI features for analysis, guidance, document handling, decision support, and workflow assistance where they create measurable value.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ct-section" aria-labelledby="ct-scope-heading">
+    <div class="ct-container">
+      <div class="ct-card">
+        <div class="ct-kicker">SCOPE DISCIPLINE</div>
+        <h2 class="ct-h2" id="ct-scope-heading" style="font-size:30px;">Starting Prices Mean Defined Scope</h2>
+        <p class="ct-muted">
+          A $15,000 platform engagement is not a promise to build any imaginable software product for one fixed price.
+          It is a starting point for a defined MVP or focused platform build. Complex integrations, mobile apps,
+          regulated-data requirements, extensive migrations, enterprise security controls, and unusually large data workloads are estimated separately.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="ct-section ct-section-alt" aria-labelledby="ct-process-heading">
     <div class="ct-container">
       <div class="ct-section-head">
         <div>
           <div class="ct-kicker">PROCESS</div>
-          <h2 class="ct-h2" style="font-size:34px;">How each build runs</h2>
+          <h2 class="ct-h2" id="ct-process-heading">How an Engagement Runs</h2>
         </div>
-        <p class="ct-muted">Simple three-step sprints keep work moving without stealing your calendar.</p>
+        <p class="ct-muted">Clear checkpoints keep the work understandable and prevent the project from drifting.</p>
       </div>
       <div class="ct-grid-3">
         <div class="ct-card">
-          <h3 class="ct-h3">1 / Strategy</h3>
-          <p class="ct-muted">Clarify the service, service area, and urgent offer. Gather assets, testimonials, and access.</p>
+          <div class="ct-step-num" aria-hidden="true">01</div>
+          <h3 class="ct-h3">Diagnose</h3>
+          <p class="ct-muted">Map the workflow, identify the real constraint, define the desired outcome, and decide what should or should not be automated.</p>
         </div>
         <div class="ct-card">
-          <h3 class="ct-h3">2 / Build</h3>
-          <p class="ct-muted">Write copy, design sections, wire automations. Share a Loom walkthrough for review.</p>
+          <div class="ct-step-num" aria-hidden="true">02</div>
+          <h3 class="ct-h3">Build</h3>
+          <p class="ct-muted">Design the solution, implement in focused increments, and review progress against the agreed scope.</p>
         </div>
         <div class="ct-card">
-          <h3 class="ct-h3">3 / Launch</h3>
-          <p class="ct-muted">QA, performance checks, DNS/hosting coordination, and post-launch tweaks.</p>
+          <div class="ct-step-num" aria-hidden="true">03</div>
+          <h3 class="ct-h3">Deploy &amp; Stabilize</h3>
+          <p class="ct-muted">Launch, test the real workflow, correct issues, document the system, and hand off a stable operating foundation.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="ct-section">
-    <div class="ct-container">
-      <div class="ct-card">
-        <h2 class="ct-h2" style="font-size:30px;">Every engagement includes</h2>
-        <div class="ct-grid-3">
-          <div>
-            <h3 class="ct-h3">Messaging & copy</h3>
-            <p class="ct-muted">Positioning, headlines, FAQs, and offers tuned for home-service buyers.</p>
-          </div>
-          <div>
-            <h3 class="ct-h3">Technical setup</h3>
-            <p class="ct-muted">Hosting/DNS guidance, site speed passes, analytics, and form notifications.</p>
-          </div>
-          <div>
-            <h3 class="ct-h3">Documentation</h3>
-            <p class="ct-muted">Editable templates, Loom handoff, and 14-day support buffer.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="ct-cta">
+  <section class="ct-cta" aria-labelledby="ct-services-cta-heading">
     <div class="ct-container ct-cta-inner">
       <div>
         <div class="ct-kicker">NEXT</div>
-        <h2 class="ct-h2">Need a lead-ready site?</h2>
-        <p class="ct-muted">Send your URL, service focus, and goal. We’ll reply with a build plan.</p>
+        <h2 class="ct-h2" id="ct-services-cta-heading">Start With the Problem, Not the Technology</h2>
+        <p class="ct-muted">Tell us what is slowing the business down. We&rsquo;ll help determine the right level of engagement.</p>
       </div>
       <div class="ct-cta-actions">
-        <a class="ct-btn ct-btn-primary" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">Start a project</a>
-        <a class="ct-btn ct-btn-ghost" href="<?php echo esc_url( home_url( '/work/' ) ); ?>">View work</a>
+        <a class="ct-btn ct-btn-primary" href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">Book a Strategy Call</a>
+        <a class="ct-btn ct-btn-ghost" href="<?php echo esc_url( home_url( '/work/' ) ); ?>">View Our Work</a>
       </div>
     </div>
   </section>
 </main>
 
-<?php get_footer();
+<?php get_footer(); ?>
