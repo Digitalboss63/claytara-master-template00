@@ -53,6 +53,39 @@ get_header();
 
       <div class="ct-section" style="padding:70px 0 0;">
         <div class="ct-card">
+          <div class="ct-kicker">HOW CLAYTARA IS GROWING</div>
+          <h2 class="ct-h2" style="font-size:26px;">From service delivery to a product studio with owned SaaS</h2>
+          <p class="ct-muted" style="margin-top:12px;">
+            Claytara is progressing beyond one-off automation work into a model that combines client systems,
+            proprietary software products, recurring SaaS revenue, strategic distribution partnerships, and measured growth capital.
+          </p>
+          <div class="ct-divider"></div>
+
+          <div class="ct-grid-3">
+            <div>
+              <h3 class="ct-h3">01. Systems foundation</h3>
+              <p class="ct-muted">Workflow automation, AI integration, business intelligence, and operational architecture remain the core engineering discipline.</p>
+            </div>
+            <div>
+              <h3 class="ct-h3">02. Owned products</h3>
+              <p class="ct-muted">Find Home First is Claytara's flagship B2B SaaS platform, built around Housing Acquisition &amp; Placement Operations.</p>
+            </div>
+            <div>
+              <h3 class="ct-h3">03. Commercial growth</h3>
+              <p class="ct-muted">The current focus is customer acquisition, partner distribution, lean support operations, and selective angel-backed expansion.</p>
+            </div>
+          </div>
+
+          <div class="ct-divider"></div>
+          <div class="ct-note">
+            <strong>Current milestone:</strong> Find Home First has moved into commercial positioning with paid SaaS tiers, a 14-day trial,
+            an Atlanta-first go-to-market strategy, and partnership development for broader distribution.
+          </div>
+        </div>
+      </div>
+
+      <div class="ct-section" style="padding:70px 0 0;">
+        <div class="ct-card">
           <h2 class="ct-h2" style="font-size:26px;">How we approach every engagement</h2>
           <div class="ct-divider"></div>
 
